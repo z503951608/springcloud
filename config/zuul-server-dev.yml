@@ -1,6 +1,3 @@
-getto1:
-  #是否开启wxAuth过滤器，开启了，则需要有权限设置
-  enableWxAuthFilter: true
 logging:
   level:
     root: info
@@ -16,7 +13,7 @@ spring:
       max-request-size: 30Mb
   zipkin:
     service:
-      name: wxqyapp-zipkin-server
+      name: zipkin-server
 zuul:
   ignoredPatterns: /favicon.ico
   sendErrorFilter: 
