@@ -1,0 +1,53 @@
+getto1:
+  #是否开启wxAuth过滤器，开启了，则需要有权限设置
+  enableWxAuthFilter: true
+logging:
+  level:
+    root: info
+    com.getto1: debug
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+    multipart:
+      max-file-size: 30Mb
+      max-request-size: 30Mb
+  zipkin:
+    service:
+      name: wxqyapp-zipkin-server
+zuul:
+  ignoredPatterns: /favicon.ico
+  sendErrorFilter: 
+    post: 
+      display: true
+  SendResponseFilter:
+    post:
+      display: true
+  servlet-path: /
+  sensitiveHeaders: 
+  routes:
+    wxqyapp-wxapi: /wxapi-api/**
+    wxqyapp-oss: /oss-api/**
+    wxqyapp-address-book: /addressbook-api/**
+    wxqyapp-notify: /notice-api/**
+    wxqyapp-oauth: /oauth-api/**
+    wxqyapp-comments: /comments-api/**
+    wxqyapp-message: /message-api/**
+    evaluation-wxapp: /evaluation-wxapp-api/**
+    evaluation-manage: /evaluation-manager-api/**
+    wxqyapp-rabbitmq-customer: /rabbitmq-customer-api/**
+    wxqyapp-rabbitmq-produce: /rabbitmq-produce-api/**
+hystrix:    
+  command:   
+    default: 
+      execution:
+        timeout:
+          enabled: true 
+        isolation: 
+          thread: 
+            timeoutInMilliseconds: 80000
+ribbon: 
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
