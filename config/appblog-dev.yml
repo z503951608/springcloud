@@ -11,7 +11,7 @@ spring:
     basic:
       type: com.alibaba.druid.pool.DruidDataSource
       driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://192.168.101.149:3306/basic?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      url: jdbc:mysql://localhost:3306/basic?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
       username: root
       password: 123
       allowMultiQueries: true
@@ -40,7 +40,7 @@ spring:
     business:
       type: com.alibaba.druid.pool.DruidDataSource
       driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://192.168.101.149:3308/appblog?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      url: jdbc:mysql://localhost:3306/appblog?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
       username: root
       password: 123
       allowMultiQueries: true
