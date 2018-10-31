@@ -1,7 +1,7 @@
 logging:
   level:
     root: info
-    com.getto1: debug
+    top.jasminecloud: debug
 spring:
   http:
     encoding:
@@ -25,17 +25,8 @@ zuul:
   servlet-path: /
   sensitiveHeaders: 
   routes:
-    wxqyapp-wxapi: /wxapi-api/**
-    wxqyapp-oss: /oss-api/**
-    wxqyapp-address-book: /addressbook-api/**
-    wxqyapp-notify: /notice-api/**
-    wxqyapp-oauth: /oauth-api/**
-    wxqyapp-comments: /comments-api/**
-    wxqyapp-message: /message-api/**
-    evaluation-wxapp: /evaluation-wxapp-api/**
-    evaluation-manage: /evaluation-manager-api/**
-    wxqyapp-rabbitmq-customer: /rabbitmq-customer-api/**
-    wxqyapp-rabbitmq-produce: /rabbitmq-produce-api/**
+    appblog: /appblog-api/**
+    zuul-server: /zuul-server-api/**
 hystrix:    
   command:   
     default: 
