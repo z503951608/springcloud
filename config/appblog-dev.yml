@@ -1,6 +1,6 @@
 top: 
   jasminecloud:
-    baseURL:http://jasminecloud.top
+    baseURL: http://jasminecloud.top
 
 logging:
   level:
