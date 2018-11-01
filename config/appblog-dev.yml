@@ -1,3 +1,7 @@
+top: 
+  jasminecloud:
+    baseURL:http://jasminecloud.top
+
 logging:
   level:
     root: error
