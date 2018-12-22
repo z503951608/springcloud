@@ -44,7 +44,7 @@ spring:
     business:
       type: com.alibaba.druid.pool.DruidDataSource
       driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://192.168.0.104:3306/appblog?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      url: jdbc:mysql://192.168.0.106:3306/appblog?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
       username: root
       password: 123456
       allowMultiQueries: true
@@ -83,7 +83,7 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   redis:
-    host: 192.168.0.104
+    host: 192.168.0.106
     port: 6379
     password:
     # 连接超时时间（毫秒）
